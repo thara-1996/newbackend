@@ -12,10 +12,12 @@ const postRoutes = require('./routes/posts')
 app.use(bodyParser.json());
 app.use(cors());
 
+
 //route middleware
 app.use(postRoutes);
 
 const port = 8000;
+
 
 
 const DB_URL = 'mongodb+srv://thara:tharanga113@cluster0.jpeks.mongodb.net/newCrud?retryWrites=true&w=majority';
